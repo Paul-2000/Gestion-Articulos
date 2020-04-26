@@ -1,0 +1,16 @@
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csprojAssemblyReference.cache
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.Form1.resources
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.Properties.Resources.resources
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.GenerateResource.cache
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.CoreCompileInputs.cache
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Gestion-Art-Desktop.exe.config
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Gestion-Art-Desktop.exe
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Gestion-Art-Desktop.pdb
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.exe
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.pdb
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Dominio.dll
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Negocio.dll
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Dominio.pdb
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Negocio.pdb
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.CopyComplete
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.frmAltaArticulos.resources
