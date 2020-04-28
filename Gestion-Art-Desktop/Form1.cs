@@ -12,21 +12,16 @@ using Negocio;
 
 namespace Gestion_Art_Desktop
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ArticulosNegocio negocio = new ArticulosNegocio();
-            pgbArticulos.DataSource = negocio.Listar();
-            pgbArticulos.Columns[0].Visible = false;
-            pgbArticulos.Columns[4].Visible = false;
-            pgbArticulos.Columns[5].Visible = false;
-            pgbArticulos.Columns[6].Visible = false;
+
         }
 
         private void pgbArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -34,19 +29,7 @@ namespace Gestion_Art_Desktop
 
         }
 
-        private void pgbArticulos_MouseClick(object sender, MouseEventArgs e)
-        {
-            try
-            {
-                Articulos art;
-                art = (Articulos)pgbArticulos.CurrentRow.DataBoundItem;
-                picArt.Load(art.ImagURL);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
+
 
         private void ClickArt(object sender, EventArgs e)
         {
@@ -57,6 +40,12 @@ namespace Gestion_Art_Desktop
         {
             frmAltaArticulos alta = new frmAltaArticulos();
             alta.ShowDialog();
+        }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+            frmListadoArticulos listado = new frmListadoArticulos();
+            listado.ShowDialog();
         }
     }
 }

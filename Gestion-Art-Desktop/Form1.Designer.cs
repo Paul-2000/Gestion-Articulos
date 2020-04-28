@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Art_Desktop
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,82 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pgbArticulos = new System.Windows.Forms.DataGridView();
-            this.picArt = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pgbArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picArt)).BeginInit();
+            this.txtGestiondeArticulos = new System.Windows.Forms.Label();
+            this.btnListado = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // pgbArticulos
-            // 
-            this.pgbArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pgbArticulos.BackgroundColor = System.Drawing.Color.PowderBlue;
-            this.pgbArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pgbArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.pgbArticulos.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pgbArticulos.Location = new System.Drawing.Point(29, 30);
-            this.pgbArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pgbArticulos.MultiSelect = false;
-            this.pgbArticulos.Name = "pgbArticulos";
-            this.pgbArticulos.RowHeadersWidth = 51;
-            this.pgbArticulos.RowTemplate.Height = 24;
-            this.pgbArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.pgbArticulos.Size = new System.Drawing.Size(569, 347);
-            this.pgbArticulos.TabIndex = 0;
-            this.pgbArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pgbArticulos_CellContentClick);
-            this.pgbArticulos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pgbArticulos_MouseClick);
-            // 
-            // picArt
-            // 
-            this.picArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picArt.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.picArt.Location = new System.Drawing.Point(640, 30);
-            this.picArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picArt.Name = "picArt";
-            this.picArt.Size = new System.Drawing.Size(381, 347);
-            this.picArt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picArt.TabIndex = 1;
-            this.picArt.TabStop = false;
-            this.picArt.Click += new System.EventHandler(this.ClickArt);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Location = new System.Drawing.Point(29, 411);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(164, 55);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "&Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // Form1
+            // txtGestiondeArticulos
+            // 
+            this.txtGestiondeArticulos.AutoSize = true;
+            this.txtGestiondeArticulos.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGestiondeArticulos.Location = new System.Drawing.Point(336, 9);
+            this.txtGestiondeArticulos.Name = "txtGestiondeArticulos";
+            this.txtGestiondeArticulos.Size = new System.Drawing.Size(388, 57);
+            this.txtGestiondeArticulos.TabIndex = 3;
+            this.txtGestiondeArticulos.Text = "Gestión de Artículos";
+            // 
+            // btnListado
+            // 
+            this.btnListado.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListado.Location = new System.Drawing.Point(199, 411);
+            this.btnListado.Name = "btnListado";
+            this.btnListado.Size = new System.Drawing.Size(164, 55);
+            this.btnListado.TabIndex = 4;
+            this.btnListado.Text = "&Listado";
+            this.btnListado.UseVisualStyleBackColor = false;
+            this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnModificar.Location = new System.Drawing.Point(369, 411);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnModificar.Size = new System.Drawing.Size(164, 55);
+            this.btnModificar.TabIndex = 5;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 478);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnListado);
+            this.Controls.Add(this.txtGestiondeArticulos);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.picArt);
-            this.Controls.Add(this.pgbArticulos);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(940, 457);
-            this.Name = "Form1";
+            this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Gestión de Artículos";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pgbArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picArt)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView pgbArticulos;
-        private System.Windows.Forms.PictureBox picArt;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label txtGestiondeArticulos;
+        private System.Windows.Forms.Button btnListado;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
 

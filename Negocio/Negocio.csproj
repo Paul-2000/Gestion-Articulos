@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArticulosNegocio.cs" />
+    <Compile Include="CategoriaNegocio.cs" />
+    <Compile Include="ListadoArticulosNegocio.cs" />
+    <Compile Include="MarcaNegocio.cs" />
     <Compile Include="NoMeGustaException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

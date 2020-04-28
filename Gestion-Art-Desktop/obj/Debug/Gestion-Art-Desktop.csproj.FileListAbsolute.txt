@@ -1,5 +1,4 @@
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csprojAssemblyReference.cache
-C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.Form1.resources
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.Properties.Resources.resources
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.GenerateResource.cache
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.CoreCompileInputs.cache
@@ -14,3 +13,5 @@ C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Dom
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\bin\Debug\Negocio.pdb
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion-Art-Desktop.csproj.CopyComplete
 C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.frmAltaArticulos.resources
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.frmPrincipal.resources
+C:\Users\paula\source\repos\Gestion-Artículos\Gestion-Art-Desktop\obj\Debug\Gestion_Art_Desktop.frmListadoArticulos.resources

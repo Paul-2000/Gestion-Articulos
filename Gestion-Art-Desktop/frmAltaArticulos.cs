@@ -26,9 +26,19 @@ namespace Gestion_Art_Desktop
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            Articulos nArt = new Articulos();
+            ArticulosNegocio negocioArt = new ArticulosNegocio();
             try
             {
-
+                nArt.Codigo = txtCodigo.Text.Trim();
+                nArt.Nombre = txtNombre.Text.Trim();
+                nArt.Descripcion = txtDescripcion.Text.Trim();
+                nArt.Marca = (Marca)cboMarca.SelectedItem; ;
+                nArt.Categoria = (Categoria)cboCategoria.SelectedItem;
+                nArt.ImagURL = txtImagenUrl.Text.Trim();
+                //nArt.Precio = (decimal)txtPrecio;
+                
+                negocioArt.AgregarArt(nArt);
             }
             catch (Exception ex)
             {
@@ -44,10 +54,12 @@ namespace Gestion_Art_Desktop
 
         private void frmAltaArticulos_Load(object sender, EventArgs e)
         {
-            
+            CategoriaNegocio cate = new CategoriaNegocio();
+            MarcaNegocio Marc = new MarcaNegocio();
             try
             {
-
+                cboCategoria.DataSource = cate.Listar();
+                cboMarca.DataSource = Marc.Listar();
             }
             catch (Exception ex)
             {

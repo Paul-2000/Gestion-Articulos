@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using Dominio;
+using System.Data.SqlClient;
+
 
 namespace Negocio
 {
-    public class ArticulosNegocio
+    class ListadoArticulosNegocio
     {
         public List<Articulos> Listar()
         {
@@ -38,7 +39,7 @@ namespace Negocio
 
                     listado.Add(aux);
                 }
-                
+
                 return listado;
             }
             catch (SqlException ex2)
@@ -56,40 +57,5 @@ namespace Negocio
                 conexion.Close();
             }
         }
-
-        public void AgregarArt(Articulos nuevo)
-        {
-            SqlConnection conexion = new SqlConnection();
-            SqlCommand comando = new SqlCommand();
-
-            try
-            {
-                //'"+ nuevo.Codigo +"'
-                conexion.ConnectionString = "data source=DESKTOP-VMO2M2L\\SQLEXPRESS01; initial catalog=CATALOGO_DB; Integrated security=sspi;";
-                comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio) Values(@Codigo, @Nombre, @Descripcion, @Marca, @Categoria, @ImagenUrl, @Precio)";
-                //comando.Parameters.Clear();
-                comando.Parameters.AddWithValue("@Codigo", nuevo.Codigo);
-                comando.Parameters.AddWithValue("@Nombre", nuevo.Nombre.ToString());
-                comando.Parameters.AddWithValue("@Descripcion", nuevo.Descripcion.ToString());
-                comando.Parameters.AddWithValue("@Marca", nuevo.IDMarca.ToString());
-                comando.Parameters.AddWithValue("@Categoria", nuevo.IDCategoria.ToString());
-                comando.Parameters.AddWithValue("@ImagenUrl", nuevo.ImagURL.ToString());
-                comando.Parameters.AddWithValue("@Precio", nuevo.Precio);
-                comando.Connection = conexion;
-                conexion.Open();
-                comando.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            finally
-            {
-                conexion.Close();
-            }
-        }
     }
 }
-
