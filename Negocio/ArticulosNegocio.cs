@@ -72,18 +72,18 @@ namespace Negocio
                 comando.Parameters.AddWithValue("@Codigo", nuevo.Codigo);
                 comando.Parameters.AddWithValue("@Nombre", nuevo.Nombre.ToString());
                 comando.Parameters.AddWithValue("@Descripcion", nuevo.Descripcion.ToString());
-                comando.Parameters.AddWithValue("@Marca", nuevo.IDMarca.ToString());
-                comando.Parameters.AddWithValue("@Categoria", nuevo.IDCategoria.ToString());
+                comando.Parameters.AddWithValue("@Marca", nuevo.Marca.ID.ToString());
+                comando.Parameters.AddWithValue("@Categoria", nuevo.Categoria.ID.ToString());
                 comando.Parameters.AddWithValue("@ImagenUrl", nuevo.ImagURL.ToString());
                 comando.Parameters.AddWithValue("@Precio", nuevo.Precio);
                 comando.Connection = conexion;
                 conexion.Open();
                 comando.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
-                throw ex;
+                throw new NoMeGustaException("No me gusta lo que estás haciendo con la Base de Datos...");
             }
             finally
             {

@@ -36,16 +36,17 @@ namespace Gestion_Art_Desktop
                 nArt.Marca = (Marca)cboMarca.SelectedItem; ;
                 nArt.Categoria = (Categoria)cboCategoria.SelectedItem;
                 nArt.ImagURL = txtImagenUrl.Text.Trim();
-                //nArt.Precio = (decimal)txtPrecio;
+                nArt.Precio = Convert.ToDecimal(txtPrecio.Text);
                 
                 negocioArt.AgregarArt(nArt);
+                Dispose();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
+        
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("¿Estás seguro que queres salir?");
@@ -53,6 +54,11 @@ namespace Gestion_Art_Desktop
         }
 
         private void frmAltaArticulos_Load(object sender, EventArgs e)
+        {
+            CargarGrilla();
+        }
+
+        public void CargarGrilla()
         {
             CategoriaNegocio cate = new CategoriaNegocio();
             MarcaNegocio Marc = new MarcaNegocio();

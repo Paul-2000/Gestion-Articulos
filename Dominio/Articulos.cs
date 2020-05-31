@@ -12,7 +12,7 @@ namespace Dominio
         public string Codigo { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public int IDMarca { get; set; }
+        public int? IDMarca { get; set; }
         public int IDCategoria { get; set; }
         public string ImagURL{ get; set; }
         public decimal Precio { get; set; }

@@ -40,6 +40,7 @@ namespace Gestion_Art_Desktop
         {
             frmAltaArticulos alta = new frmAltaArticulos();
             alta.ShowDialog();
+            alta.CargarGrilla();
         }
 
         private void btnListado_Click(object sender, EventArgs e)

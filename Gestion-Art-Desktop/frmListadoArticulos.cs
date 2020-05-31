@@ -31,7 +31,7 @@ namespace Gestion_Art_Desktop
             dvgArticulos.Columns[5].Visible = false;
             dvgArticulos.Columns[6].Visible = false;
         }
-        private void pgbArticulos_MouseClick(object sender, MouseEventArgs e)
+        private void dvgArticulos_MouseClick(object sender, MouseEventArgs e)
         {
             try
             {
@@ -45,10 +45,6 @@ namespace Gestion_Art_Desktop
             }
         }
 
-        private void picArt_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void dvgArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

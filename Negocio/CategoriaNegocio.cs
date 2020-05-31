@@ -41,7 +41,7 @@ namespace Negocio
 
                 return listado;
             }
-            catch (SqlException ex2)
+            catch (SqlException)
             {
                 //throw ex2;
                 throw new NoMeGustaException("No me gusta lo que estás haciendo...");

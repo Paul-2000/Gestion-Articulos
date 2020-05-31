@@ -50,7 +50,7 @@
             this.dvgArticulos.RowHeadersWidth = 51;
             this.dvgArticulos.RowTemplate.Height = 24;
             this.dvgArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvgArticulos.Size = new System.Drawing.Size(612, 690);
+            this.dvgArticulos.Size = new System.Drawing.Size(604, 690);
             this.dvgArticulos.TabIndex = 1;
             this.dvgArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgArticulos_CellContentClick);
             // 
@@ -58,21 +58,18 @@
             // 
             this.picArt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picArt.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.picArt.Location = new System.Drawing.Point(636, 13);
-            this.picArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picArt.Location = new System.Drawing.Point(641, 13);
             this.picArt.Name = "picArt";
-            this.picArt.Size = new System.Drawing.Size(429, 690);
+            this.picArt.Size = new System.Drawing.Size(416, 690);
             this.picArt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArt.TabIndex = 2;
             this.picArt.TabStop = false;
-            this.picArt.Click += new System.EventHandler(this.picArt_Click);
             // 
             // frmListadoArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 716);
+            this.ClientSize = new System.Drawing.Size(1069, 716);
             this.Controls.Add(this.picArt);
             this.Controls.Add(this.dvgArticulos);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
